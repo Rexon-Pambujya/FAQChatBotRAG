@@ -4,7 +4,8 @@ import streamlit as st
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_core.documents.base import Document
 from langchain.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
+# from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores.base import VectorStoreRetriever
 from langchain.memory import ConversationBufferWindowMemory
 from langchain.chains import ConversationalRetrievalChain
