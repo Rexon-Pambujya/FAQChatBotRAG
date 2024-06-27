@@ -7,7 +7,9 @@ from langchain.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 # from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores.base import VectorStoreRetriever
-from langchain.memory import ConversationBufferWindowMemory
+#from langchain.memory import ConversationBufferWindowMemory
+from langchain.memory.buffer_window import ConversationBufferWindowMemory
+
 from langchain.chains import ConversationalRetrievalChain
 from langchain.document_loaders import UnstructuredPDFLoader
 import _thread
