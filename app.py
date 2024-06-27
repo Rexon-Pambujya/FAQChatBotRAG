@@ -10,8 +10,7 @@ from langchain.vectorstores.base import VectorStoreRetriever
 #from langchain.memory import ConversationBufferWindowMemory
 from langchain.memory.buffer_window import ConversationBufferWindowMemory
 
-# from langchain.chains import ConversationalRetrievalChain
-from langchain.chains import create_history_aware_retriever
+from langchain.chains import ConversationalRetrievalChain
 
 from langchain.document_loaders import UnstructuredPDFLoader
 import _thread
@@ -65,7 +64,7 @@ def create_llm():
 
 # Function to get answer using ConversationalRetrievalChain
 def get_answer(llm, retriever, memory, query):
-    conversation_chain = create_history_aware_retriever.from_llm(
+    conversation_chain = ConversationalRetrievalChain.from_llm(
         llm=llm,
         retriever=retriever,
         memory=memory,
