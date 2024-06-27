@@ -49,7 +49,7 @@ def embed_text(_documents):
 # Function to create buffer memory
 @st.cache_data(show_spinner=True)
 def create_buffer_memory():
-    memory = ConversationBufferWindowMemory(k=2, memory_key="chat_history", return_messages=True)
+    memory = ConversationBufferWindowMemory(k=2, memory_key="chat_history",output_key='answer', return_messages=True)
     return memory
 
 # Function to create LLM using HuggingFaceHub
