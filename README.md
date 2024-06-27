@@ -6,7 +6,8 @@ Objective: To create an AI chatbot for customers that can answer FAQ questions.
 
 ### Objective:
 
-The goal of our assignment is to build a web based chatbot that can answer frequently asked questions from our customers. The chatbot should:
+The goal of our project is to build a web based chatbot that can answer frequently asked questions from our customers.
+The chatbot should:
 
 1. Use Retrieval Augmented Generation
 2. Chat History as Context
